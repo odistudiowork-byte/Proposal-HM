@@ -1,7 +1,7 @@
 import React from 'react';
 import { heroData } from '../data/mock';
 import { Button } from './ui/button';
-import { ChevronDown, Sparkles } from 'lucide-react';
+import { ChevronDown, FileText } from 'lucide-react';
 
 const Hero = () => {
   const scrollToContent = () => {
@@ -26,10 +26,15 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur-sm border border-[#D4A574]/20 mb-8 animate-fade-in">
-          <Sparkles className="w-4 h-4 text-[#B8845C]" />
-          <span className="text-sm font-medium text-[#8B6346] tracking-wide">{heroData.tagline}</span>
+        {/* Proposal Badge */}
+        <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/80 backdrop-blur-sm border border-[#D4A574]/30 mb-6 animate-fade-in shadow-sm">
+          <FileText className="w-4 h-4 text-[#B8845C]" />
+          <span className="text-sm font-medium text-[#5C3D2E] tracking-wide">Campaign Proposal</span>
+        </div>
+
+        {/* Brand Names */}
+        <div className="mb-8 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+          <span className="text-lg md:text-xl text-[#B8845C] font-medium tracking-widest uppercase">{heroData.tagline}</span>
         </div>
 
         {/* Main headline */}
@@ -39,8 +44,13 @@ const Hero = () => {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-xl md:text-2xl text-[#8B6346]/80 max-w-2xl mx-auto mb-12 font-light leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <p className="text-xl md:text-2xl text-[#8B6346]/80 max-w-2xl mx-auto mb-4 font-light leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           {heroData.subheadline}
+        </p>
+
+        {/* Proposal date */}
+        <p className="text-sm text-[#B8845C]/70 mb-12 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+          Prepared by ODI STUDIOS • January 2025
         </p>
 
         {/* CTA Button */}
