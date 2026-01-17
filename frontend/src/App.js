@@ -11,6 +11,7 @@ import Scope from './components/Scope';
 import WhyOdi from './components/WhyOdi';
 import NextSteps from './components/NextSteps';
 import Footer from './components/Footer';
+import DownloadButton from './components/DownloadButton';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <NextSteps />
       </main>
       <Footer />
+      <DownloadButton />
     </div>
   );
 }
