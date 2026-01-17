@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X, FileText } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Header = () => {
@@ -29,7 +29,7 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-sm py-4'
+          ? 'bg-white/95 backdrop-blur-md shadow-sm py-4'
           : 'bg-transparent py-6'
       }`}
     >
@@ -41,15 +41,18 @@ const Header = () => {
             className="flex items-center gap-3 group"
           >
             <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors ${
-              isScrolled ? 'bg-[#5C3D2E]' : 'bg-white/20 backdrop-blur-sm'
+              isScrolled ? 'bg-[#5C3D2E]' : 'bg-[#5C3D2E]/90'
             }`}>
-              <Sparkles className={`w-5 h-5 ${isScrolled ? 'text-[#D4A574]' : 'text-[#5C3D2E]'}`} />
+              <FileText className="w-5 h-5 text-[#D4A574]" />
             </div>
-            <span className={`font-medium text-lg tracking-wide transition-colors ${
-              isScrolled ? 'text-[#5C3D2E]' : 'text-[#5C3D2E]'
-            }`}>
-              ODI STUDIOS
-            </span>
+            <div className="flex flex-col items-start">
+              <span className={`font-medium text-lg tracking-wide transition-colors ${
+                isScrolled ? 'text-[#5C3D2E]' : 'text-[#5C3D2E]'
+              }`}>
+                ODI STUDIOS
+              </span>
+              <span className="text-xs text-[#B8845C] tracking-wider">PROPOSAL</span>
+            </div>
           </button>
 
           {/* Desktop Nav */}
