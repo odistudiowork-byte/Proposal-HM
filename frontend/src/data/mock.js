@@ -105,8 +105,7 @@ export const packagesData = [
     includes: [
       "The First Bite Booth installation",
       "Street prompt boards leading to the booth",
-      "3–4 on-ground staff",
-      "Photography & short-form video content"
+      "3–4 on-ground staff"
     ],
     impact: "High participation, strong UGC, immediate virality."
   },
@@ -118,7 +117,7 @@ export const packagesData = [
       "Everything in Package 1",
       "The Melt Box street installation",
       "Oversized marshmallow street props",
-      "Enhanced content capture"
+      "Basic photography coverage"
     ],
     impact: "Adds emotional depth, artistic value, and longer audience engagement.",
     popular: true
@@ -131,7 +130,7 @@ export const packagesData = [
       "Everything in Package 1 & 2",
       "Full Soft Street Journey build-up",
       "Museum-style Melt Box experience",
-      "Professional photo + video documentation",
+      "PR & influencer marketing",
       "Hero recap film + multiple reels"
     ],
     impact: "A cultural moment, press-worthy execution, and flagship brand statement."
